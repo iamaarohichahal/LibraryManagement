@@ -1,14 +1,14 @@
 CREATE table Users (User_id INTEGER PRIMARY KEY, Username TEXT, Password TEXT,
     User_email TEXT, User_first_name TEXT,User_last_name TEXT);
 
-INSERT into Users VALUES (1,"iam", "123", "iam@gmail.com", "i", "am");
+INSERT into Users VALUES (1,"User1", "123", "iam@gmail.com", "i", "am");
+INSERT into Users VALUES (2,"Admin", "123", "iamadmin@gmail.com", "i", "am");
 
 SELECT * FROM Users;
 
-CREATE TABLE Administrators (Admin_id INTEGER PRIMARY KEY, Admin_username TEXT , Admin_password TEXT ,
-    Admin_email TEXT, Admin_first_name TEXT , Admin_last_name TEXT);
+CREATE TABLE Administrators (User_id INTEGER PRIMARY KEY);
 
-INSERT into Administrators VALUES (1,"iamnot", "321", "iamnot@gmail.com", "iam", "not");
+INSERT into Administrators VALUES (2);
 
 SELECT * FROM Administrators;
 
