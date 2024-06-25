@@ -35,4 +35,6 @@ CREATE table Books (book_id INTEGER PRIMARY KEY, title_name TEXT, ISBN TEXT, pub
 
 INSERT into Books VALUES (1, "asd", "1243ew34$", "122334" ,1,1,1);
 
+INSERT into Books VALUES (2, "asd2", "1243ew34$", "122334" ,1,1,1);
+
 SELECT* FROM Books ;
