@@ -1,0 +1,38 @@
+CREATE table Users (User_id INTEGER PRIMARY KEY, Username TEXT, Password TEXT,
+    User_email TEXT, User_first_name TEXT,User_last_name TEXT);
+
+INSERT into Users VALUES (1,"iam", "123", "iam@gmail.com", "i", "am");
+
+SELECT * FROM Users;
+
+CREATE TABLE Administrators (Admin_id INTEGER PRIMARY KEY, Admin_username TEXT , Admin_password TEXT ,
+    Admin_email TEXT, Admin_first_name TEXT , Admin_last_name TEXT);
+
+INSERT into Administrators VALUES (1,"iamnot", "321", "iamnot@gmail.com", "iam", "not");
+
+SELECT * FROM Administrators;
+
+CREATE table Authors (author_id INTEGER PRIMARY KEY, author_first_name TEXT, author_last_name TEXT);
+
+INSERT into Authors VALUES (1,"jk", "rl");
+
+SELECT * FROM Authors;
+
+CREATE table Categories (category_id INTEGER PRIMARY KEY, category_name TEXT);
+
+INSERT into Categories VALUES (1,"abc");
+
+SELECT * FROM Categories;
+
+CREATE table Publishers (publisher_id INTEGER PRIMARY KEY, publisher_name TEXT);
+
+INSERT into Publishers VALUES (1, "qwe");
+
+SELECT * FROM Publishers;
+
+CREATE table Books (book_id INTEGER PRIMARY KEY, title_name TEXT, ISBN TEXT, publication_year INTEGER,
+    publisher_id INTEGER, category_id INTEGER, author_id INTEGER);
+
+INSERT into Books VALUES (1, "asd", "1243ew34$", "122334" ,1,1,1);
+
+SELECT* FROM Books ;
